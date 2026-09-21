@@ -1,0 +1,1129 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+
+    <meta name="author" content="Rolazo" />
+    <meta
+      name="description"
+      content="Rolazo - Unimos generaciones a través de la moda bogotana"
+    />
+
+    <title>Rolazo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baumans&family=Poppins:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- <script src="js/discos-musica.js"></script>  (archivo no incluido en el zip original; descomentar si lo agregas) -->
+  </head>
+
+  <body>
+    <div class="fondo-retro" aria-hidden="true">
+      <!-- Rayo -->
+      <span
+        class="retro-doodle"
+        style="top: 6%; left: 4%; color: #e34190; --rd-shadow: #68c6dd"
+        data-speed="0.05"
+        data-rot="-12"
+        ><svg viewBox="0 0 24 24">
+          <path
+            d="M13 2 L5 14 H11 L9 22 L19 9 H13 Z"
+            fill="currentColor"
+          /></svg
+      ></span>
+      <!-- Grabadora -->
+      <span
+        class="retro-doodle rd-grande"
+        style="top: 4%; left: 80%; color: #68c6dd; --rd-shadow: #e34190"
+        data-speed="0.03"
+        data-rot="10"
+        ><svg viewBox="0 0 24 24">
+          <rect x="2" y="5" width="20" height="14" rx="2" fill="currentColor" />
+          <circle cx="8" cy="12" r="3" fill="#FFFCE6" />
+          <circle cx="16" cy="12" r="3" fill="#FFFCE6" />
+          <rect x="7" y="16" width="10" height="2" fill="#FFFCE6" /></svg
+      ></span>
+      <!-- Estrella -->
+      <span
+        class="retro-doodle rd-chica"
+        style="top: 16%; left: 45%; color: #fee601; --rd-shadow: #35276b"
+        data-speed="0.07"
+        data-rot="8"
+        ><svg viewBox="0 0 24 24">
+          <path
+            d="M12 2 L14 10 L22 12 L14 14 L12 22 L10 14 L2 12 L10 10 Z"
+            fill="currentColor"
+          /></svg
+      ></span>
+      <!-- Gafas -->
+      <span
+        class="retro-doodle"
+        style="top: 24%; left: 12%; color: #68c6dd; --rd-shadow: #e34190"
+        data-speed="0.04"
+        data-rot="-8"
+        ><svg viewBox="0 0 24 24">
+          <circle cx="6.5" cy="12" r="4.2" fill="currentColor" />
+          <circle cx="17.5" cy="12" r="4.2" fill="currentColor" />
+          <rect x="10" y="10.6" width="4" height="2" fill="currentColor" /></svg
+      ></span>
+      <!-- Estrella grande -->
+      <span
+        class="retro-doodle rd-grande"
+        style="top: 30%; left: 90%; color: #e34190; --rd-shadow: #68c6dd"
+        data-speed="0.06"
+        data-rot="14"
+        ><svg viewBox="0 0 24 24">
+          <path
+            d="M12 2 L14 10 L22 12 L14 14 L12 22 L10 14 L2 12 L10 10 Z"
+            fill="currentColor"
+          /></svg
+      ></span>
+      <!-- Rayo chico -->
+      <span
+        class="retro-doodle rd-chica"
+        style="top: 40%; left: 6%; color: #fee601; --rd-shadow: #35276b"
+        data-speed="0.05"
+        data-rot="-10"
+        ><svg viewBox="0 0 24 24">
+          <path
+            d="M13 2 L5 14 H11 L9 22 L19 9 H13 Z"
+            fill="currentColor"
+          /></svg
+      ></span>
+      <!-- Grabadora -->
+      <span
+        class="retro-doodle"
+        style="top: 46%; left: 60%; color: #e34190; --rd-shadow: #68c6dd"
+        data-speed="0.03"
+        data-rot="12"
+        ><svg viewBox="0 0 24 24">
+          <rect x="2" y="5" width="20" height="14" rx="2" fill="currentColor" />
+          <circle cx="8" cy="12" r="3" fill="#FFFCE6" />
+          <circle cx="16" cy="12" r="3" fill="#FFFCE6" />
+          <rect x="7" y="16" width="10" height="2" fill="#FFFCE6" /></svg
+      ></span>
+      <!-- Estrella grande -->
+      <span
+        class="retro-doodle rd-grande"
+        style="top: 54%; left: 28%; color: #68c6dd; --rd-shadow: #e34190"
+        data-speed="0.05"
+        data-rot="-14"
+        ><svg viewBox="0 0 24 24">
+          <path
+            d="M12 2 L14 10 L22 12 L14 14 L12 22 L10 14 L2 12 L10 10 Z"
+            fill="currentColor"
+          /></svg
+      ></span>
+      <!-- Gafas chicas -->
+      <span
+        class="retro-doodle rd-chica"
+        style="top: 62%; left: 85%; color: #fee601; --rd-shadow: #35276b"
+        data-speed="0.06"
+        data-rot="9"
+        ><svg viewBox="0 0 24 24">
+          <circle cx="6.5" cy="12" r="4.2" fill="currentColor" />
+          <circle cx="17.5" cy="12" r="4.2" fill="currentColor" />
+          <rect x="10" y="10.6" width="4" height="2" fill="currentColor" /></svg
+      ></span>
+      <!-- Rayo -->
+      <span
+        class="retro-doodle"
+        style="top: 70%; left: 15%; color: #e34190; --rd-shadow: #68c6dd"
+        data-speed="0.04"
+        data-rot="-9"
+        ><svg viewBox="0 0 24 24">
+          <path
+            d="M13 2 L5 14 H11 L9 22 L19 9 H13 Z"
+            fill="currentColor"
+          /></svg
+      ></span>
+      <!-- Grabadora grande -->
+      <span
+        class="retro-doodle rd-grande"
+        style="top: 78%; left: 70%; color: #fee601; --rd-shadow: #35276b"
+        data-speed="0.05"
+        data-rot="13"
+        ><svg viewBox="0 0 24 24">
+          <rect x="2" y="5" width="20" height="14" rx="2" fill="currentColor" />
+          <circle cx="8" cy="12" r="3" fill="#FFFCE6" />
+          <circle cx="16" cy="12" r="3" fill="#FFFCE6" />
+          <rect x="7" y="16" width="10" height="2" fill="#FFFCE6" /></svg
+      ></span>
+      <!-- Estrella chica -->
+      <span
+        class="retro-doodle rd-chica"
+        style="top: 86%; left: 38%; color: #68c6dd; --rd-shadow: #e34190"
+        data-speed="0.03"
+        data-rot="-11"
+        ><svg viewBox="0 0 24 24">
+          <path
+            d="M12 2 L14 10 L22 12 L14 14 L12 22 L10 14 L2 12 L10 10 Z"
+            fill="currentColor"
+          /></svg
+      ></span>
+      <!-- Gafas -->
+      <span
+        class="retro-doodle"
+        style="top: 92%; left: 8%; color: #fee601; --rd-shadow: #35276b"
+        data-speed="0.06"
+        data-rot="10"
+        ><svg viewBox="0 0 24 24">
+          <circle cx="6.5" cy="12" r="4.2" fill="currentColor" />
+          <circle cx="17.5" cy="12" r="4.2" fill="currentColor" />
+          <rect x="10" y="10.6" width="4" height="2" fill="currentColor" /></svg
+      ></span>
+      <!-- Rayo grande -->
+      <span
+        class="retro-doodle rd-grande"
+        style="top: 94%; left: 58%; color: #e34190; --rd-shadow: #68c6dd"
+        data-speed="0.04"
+        data-rot="-13"
+        ><svg viewBox="0 0 24 24">
+          <path
+            d="M13 2 L5 14 H11 L9 22 L19 9 H13 Z"
+            fill="currentColor"
+          /></svg
+      ></span>
+
+      <!-- ============ FORMAS MEMPHIS NUEVAS ============ -->
+
+      <!-- Triángulos -->
+      <span
+        class="retro-doodle rd-grande"
+        style="top: 10%; left: 32%; color: #e34190; --rd-shadow: #68c6dd"
+        data-speed="0.05"
+        data-rot="6"
+        ><svg viewBox="0 0 24 24">
+          <path d="M12 3 L21 20 H3 Z" fill="currentColor" /></svg
+      ></span>
+      <span
+        class="retro-doodle"
+        style="top: 36%; left: 82%; color: #68c6dd; --rd-shadow: #e34190"
+        data-speed="0.04"
+        data-rot="-20"
+        ><svg viewBox="0 0 24 24">
+          <path d="M12 3 L21 20 H3 Z" fill="currentColor" /></svg
+      ></span>
+      <span
+        class="retro-doodle rd-chica"
+        style="top: 66%; left: 4%; color: #fee601; --rd-shadow: #35276b"
+        data-speed="0.06"
+        data-rot="15"
+        ><svg viewBox="0 0 24 24">
+          <path d="M12 3 L21 20 H3 Z" fill="currentColor" /></svg
+      ></span>
+
+      <!-- Rombos -->
+      <span
+        class="retro-doodle"
+        style="top: 20%; left: 68%; color: #fee601; --rd-shadow: #35276b"
+        data-speed="0.05"
+        data-rot="12"
+        ><svg viewBox="0 0 24 24">
+          <path d="M12 2 L22 12 L12 22 L2 12 Z" fill="currentColor" /></svg
+      ></span>
+      <span
+        class="retro-doodle rd-grande"
+        style="top: 58%; left: 50%; color: #e34190; --rd-shadow: #68c6dd"
+        data-speed="0.03"
+        data-rot="-8"
+        ><svg viewBox="0 0 24 24">
+          <path d="M12 2 L22 12 L12 22 L2 12 Z" fill="currentColor" /></svg
+      ></span>
+      <span
+        class="retro-doodle rd-chica"
+        style="top: 90%; left: 92%; color: #68c6dd; --rd-shadow: #e34190"
+        data-speed="0.07"
+        data-rot="20"
+        ><svg viewBox="0 0 24 24">
+          <path d="M12 2 L22 12 L12 22 L2 12 Z" fill="currentColor" /></svg
+      ></span>
+
+      <!-- Zigzags -->
+      <span
+        class="retro-doodle rd-grande"
+        style="top: 14%; left: 58%; color: #68c6dd; --rd-shadow: #e34190"
+        data-speed="0.04"
+        data-rot="0"
+        ><svg viewBox="0 0 24 24">
+          <polyline
+            points="2,20 7,4 12,20 17,4 22,20"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3.2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          /></svg
+      ></span>
+      <span
+        class="retro-doodle"
+        style="top: 50%; left: 8%; color: #e34190; --rd-shadow: #68c6dd"
+        data-speed="0.06"
+        data-rot="10"
+        ><svg viewBox="0 0 24 24">
+          <polyline
+            points="2,20 7,4 12,20 17,4 22,20"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3.2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          /></svg
+      ></span>
+      <span
+        class="retro-doodle rd-chica"
+        style="top: 82%; left: 48%; color: #fee601; --rd-shadow: #35276b"
+        data-speed="0.05"
+        data-rot="-6"
+        ><svg viewBox="0 0 24 24">
+          <polyline
+            points="2,20 7,4 12,20 17,4 22,20"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3.2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          /></svg
+      ></span>
+
+      <!-- Barras diagonales -->
+      <span
+        class="retro-doodle"
+        style="top: 28%; left: 26%; color: #fee601; --rd-shadow: #35276b"
+        data-speed="0.03"
+        data-rot="0"
+        ><svg viewBox="0 0 24 24">
+          <rect
+            x="1"
+            y="9"
+            width="22"
+            height="6"
+            rx="1.5"
+            fill="currentColor"
+            transform="rotate(-24 12 12)"
+          /></svg
+      ></span>
+      <span
+        class="retro-doodle rd-grande"
+        style="top: 72%; left: 90%; color: #e34190; --rd-shadow: #68c6dd"
+        data-speed="0.05"
+        data-rot="0"
+        ><svg viewBox="0 0 24 24">
+          <rect
+            x="1"
+            y="9"
+            width="22"
+            height="6"
+            rx="1.5"
+            fill="currentColor"
+            transform="rotate(-24 12 12)"
+          /></svg
+      ></span>
+      <span
+        class="retro-doodle rd-chica"
+        style="top: 96%; left: 22%; color: #68c6dd; --rd-shadow: #e34190"
+        data-speed="0.06"
+        data-rot="0"
+        ><svg viewBox="0 0 24 24">
+          <rect
+            x="1"
+            y="9"
+            width="22"
+            height="6"
+            rx="1.5"
+            fill="currentColor"
+            transform="rotate(-24 12 12)"
+          /></svg
+      ></span>
+    </div>
+
+    <div id="cursor"></div>
+
+    <button
+      id="volverInicio"
+      class="btn-volver-inicio"
+      aria-label="Volver al inicio"
+    >
+      <img src="imagenes/logo-r/logo.png" alt="Rolazo" />
+    </button>
+
+    <div class="container" data-bg="#f2ecd0">
+      <div class="row">
+        <div class="col-lg-12">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand d-flex align-items-center gap-3" href="#">
+                <img
+                  src="imagenes/logo-r/logo.png"
+                  alt="Rolazo"
+                  class="logo-navbar"
+                />
+              </a>
+
+              <div class="nav-botones">
+                <a href="#problema-solucion" class="nav-btn btn-problematica">
+                  <span class="icono"
+                    ><i class="bi bi-exclamation-triangle-fill"></i
+                  ></span>
+                  <span>Nuestra Propuesta</span>
+                </a>
+
+                <a href="#audiovisual" class="nav-btn btn-audiovisual">
+                  <span class="icono"><i class="bi bi-play-fill"></i></span>
+                  <span>Proyecto</span>
+                </a>
+
+                <a href="#equipo" class="nav-btn btn-equipo">
+                  <span class="icono"><i class="bi bi-people-fill"></i></span>
+                  <span>Conócenos</span>
+                </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row align-items-center hero-rolazo">
+        <!-- Texto -->
+
+        <div class="col-lg-6">
+          <h1 class="fw-bold display-2 hero-letras">
+            <span class="hero-linea">LAZOS QUE </span>
+            <span class="hero-linea">TRASCIENDEN</span>
+            <span class="hero-linea">GENERACIÓNES</span>
+          </h1>
+        </div>
+
+        <!-- Animación (lado derecho del hero) -->
+        <div class="col-lg-6">
+          <div class="hero-anim">
+            <img
+              class="hero-anim-video"
+              src="animacion/rolito.webp"
+              alt="Rolito animado"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="container py-5" id="problema-solucion" data-bg="#F9D8E8">
+      <div class="ps-stack">
+        <!-- PROBLEMÁTICA -->
+        <div class="ps-pill ps-pill-problema" tabindex="0" data-reveal-ps>
+          <div class="ps-pill-main">
+            <div class="ps-pill-icon">
+              <i class="bi bi-stars"></i>
+            </div>
+
+            <div class="ps-pill-text">
+              <span class="ps-pill-num">Idea principal</span>
+              <h2>Idea principal</h2>
+              <p class="ps-pill-teaser">Toca para leer de qué se trata.</p>
+            </div>
+
+            <button class="ps-pill-toggle" aria-label="Ver más de Problemática">
+              <i class="bi bi-plus-lg"></i>
+            </button>
+          </div>
+
+          <div class="ps-pill-detail">
+            <p>
+              Rolazo nace con el propósito de rescatar y reinterpretar
+              referentes de la moda de los años 80, para acercarlos a nuevas
+              generaciones. A través de experiencias visuales, narrativas y
+              creativas, el proyecto busca destacar la moda como un elemento de
+              identidad, memoria y conexión cultural.
+            </p>
+          </div>
+        </div>
+
+        <div class="ps-pill ps-pill-solucion" tabindex="0" data-reveal-ps>
+          <div class="ps-pill-main">
+            <div class="ps-pill-icon">
+              <i class="bi bi-lightbulb"></i>
+            </div>
+
+            <div class="ps-pill-text">
+              <span class="ps-pill-num">Objetivo general</span>
+              <h2>Objetivo general</h2>
+              <p class="ps-pill-teaser">Toca para leer de qué se trata.</p>
+            </div>
+
+            <button class="ps-pill-toggle" aria-label="Ver más de Solución">
+              <i class="bi bi-plus-lg"></i>
+            </button>
+          </div>
+
+          <div class="ps-pill-detail">
+            <p>
+              Promover el reconocimiento de la moda de los años 80 como un
+              proceso de identidad cultural, dando a conocer su valor histórico
+              y estético conectando dos generaciones a través de contenidos y
+              experiencias creativas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== MAPA ROLazo =================== -->
+    <section
+      class="container py-5 mapa-rolazo"
+      id="mapa-rolazo"
+      data-bg="#DDF3F7"
+    >
+      <!-- Doodles decorativos (mismo lenguaje visual que el resto del sitio) -->
+      <span class="mr-doodle" style="top: 2%; left: 4%; color: #68c6dd">
+        <svg viewBox="0 0 24 24">
+          <path d="M13 2 L5 14 H11 L9 22 L19 9 H13 Z" fill="currentColor" />
+        </svg>
+      </span>
+      <span class="mr-doodle" style="top: 6%; right: 5%; color: #fee601">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M12 2 L14 10 L22 12 L14 14 L12 22 L10 14 L2 12 L10 10 Z"
+            fill="currentColor"
+          />
+        </svg>
+      </span>
+      <span class="mr-doodle" style="bottom: 4%; left: 8%; color: #e34190">
+        <svg viewBox="0 0 24 24">
+          <circle cx="6.5" cy="12" r="4.2" fill="currentColor" />
+          <circle cx="17.5" cy="12" r="4.2" fill="currentColor" />
+          <rect x="10" y="10.6" width="4" height="2" fill="currentColor" />
+        </svg>
+      </span>
+
+      <div class="mr-layout">
+        <!-- MAPA -->
+        <div class="mr-map-card">
+          <div class="mr-map-topbar">
+            <p id="mrMapHeading">
+              Mapa de Bogotá · 7 localidades con historias
+            </p>
+            <button type="button" class="mr-btn-todos" id="mrBtnTodos">
+              Ver todos los lugares
+            </button>
+          </div>
+
+          <div class="mr-map-frame" id="mrMapFrame">
+            <!-- El SVG del mapa se inserta aquí vía JavaScript -->
+            <div id="mrMapMount"></div>
+
+            <!-- Tooltip flotante al pasar el cursor sobre una localidad -->
+            <div class="mr-hover-tip" id="mrHoverTip"></div>
+
+            <!-- Contenedor de marcadores (posicionados con JS sobre el mapa) -->
+            <div id="mrMarkersLayer"></div>
+          </div>
+
+          <div class="mr-legend">
+            <span
+              ><span
+                class="mr-legend-swatch"
+                style="background: #fff3c4"
+              ></span>
+              Localidad con lugares documentados</span
+            >
+            <span
+              ><span
+                class="mr-legend-swatch"
+                style="background: #e9e2c6"
+              ></span>
+              Contexto histórico general</span
+            >
+          </div>
+        </div>
+
+        <!-- TEXTO + PANEL DE INFORMACIÓN -->
+        <div class="mr-side">
+          <a href="#mrMapFrame" class="mr-eyebrow">📡 Sintoniza Bogotá</a>
+          <h2 class="mr-titulo">Explora la Bogotá <span>de los 80</span></h2>
+          <p class="mr-subtitulo">
+            Descubre los lugares que marcaron una época: discotecas, bares,
+            salones de baile y rincones que hoy sobreviven solo en la memoria
+            bogotana. Elige una localidad y encuentra sus lugares icónicos.
+          </p>
+
+          <aside class="mr-panel" id="mrPanel">
+            <button
+              type="button"
+              class="mr-panel-cerrar"
+              id="mrPanelCerrar"
+              aria-label="Cerrar"
+            >
+              ✕
+            </button>
+
+            <div class="mr-panel-vacio" id="mrPanelVacio">
+              <span class="mr-panel-icono">🕹️</span>
+              <p>
+                Selecciona una localidad y luego un marcador<br />para descubrir
+                su historia.
+              </p>
+            </div>
+
+            <div class="mr-panel-contenido" id="mrPanelContenido">
+              <div class="mr-panel-foto" id="mrPanelFoto"></div>
+              <span class="mr-panel-cat" id="mrPanelCat"></span>
+              <h3 class="mr-panel-nombre" id="mrPanelNombre"></h3>
+
+              <div class="mr-panel-meta">
+                <span
+                  ><b>Localidad:</b> <span id="mrPanelLocalidad"></span
+                ></span>
+                <span
+                  ><b>Ubicación:</b> <span id="mrPanelDireccion"></span
+                ></span>
+                <span><b>Época:</b> Años 80</span>
+              </div>
+
+              <p class="mr-panel-label">Historia</p>
+              <p class="mr-panel-desc" id="mrPanelDesc"></p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- En móvil, un fondo oscuro detrás del panel deslizante -->
+    <div class="mr-overlay" id="mrOverlay"></div>
+
+    <!-- ===================    Audio visual=================== -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <section class="container py-5" id="audiovisual" data-bg="#DDF3F7">
+      <h2 class="text-center fw-bold mb-5"></h2>
+
+      <div class="row g-4 align-items-start">
+        <!-- VIDEO PRINCIPAL -->
+        <div class="col-lg-8">
+          <div class="card shadow border-0 rounded-4 overflow-hidden">
+            <video
+              id="videoPrincipal"
+              class="w-100"
+              controls
+              preload="metadata"
+              src="videos/spot/spot.mp4"
+            ></video>
+
+            <div class="card-body">
+              <h3 id="tituloVideo">Cena Navideña</h3>
+
+              <p id="descripcionVideo">
+                Conoce la historia principal de Rolazo.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PLAYLIST -->
+        <div class="col-lg-4">
+          <h5 class="mb-3 fw-bold">Nuestros proyectos</h5>
+
+          <div class="playlist">
+            <!-- Principal -->
+            <div class="playlist-item active" onclick="volverPrincipal(this)">
+              <h6>Spot</h6>
+
+              <small> Historia principal del proyecto. </small>
+            </div>
+
+            <!-- Video 1 -->
+            <div
+              class="playlist-item"
+              onclick="
+                cambiarVideo(
+                  'videos/videos carrucel/video 1.mp4',
+                  'Cena Navideña',
+                  'Descubre cómo realizamos las grabaciones.',
+                  this,
+                )
+              "
+            >
+              <h6>Audiovisual</h6>
+
+              <small> Detrás de cámaras. </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== VIDEOs=================== -->
+    <br />
+    <br />
+    <br />
+
+    <section class="py-5" id="videos" data-bg="#FFF6C6">
+      <h2 class="fw-bold mb-4">¿Sabías que...?</h2>
+      <p></p>
+
+      <div class="videos-scroll">
+        <div class="video-card">
+          <div class="video-card-media">
+            <video autoplay muted loop playsinline>
+              <source src="videos/carrucel/video-1.mp4" type="video/mp4" />
+            </video>
+            <button
+              type="button"
+              class="video-audio-toggle"
+              aria-label="Activar audio"
+              onclick="toggleVideoAudio(this)"
+            >
+              <i class="bi bi-volume-mute-fill"></i>
+            </button>
+          </div>
+          <h5>¿Cómo nació la idea?</h5>
+        </div>
+
+        <div class="video-card">
+          <div class="video-card-media">
+            <video autoplay muted loop playsinline>
+              <source src="videos/carrucel/video-2.mp4" type="video/mp4" />
+            </video>
+            <button
+              type="button"
+              class="video-audio-toggle"
+              aria-label="Activar audio"
+              onclick="toggleVideoAudio(this)"
+            >
+              <i class="bi bi-volume-mute-fill"></i>
+            </button>
+          </div>
+          <h5>¿Qué queremos lograr con este proyecto?</h5>
+        </div>
+
+        <div class="video-card">
+          <div class="video-card-media">
+            <video autoplay muted loop playsinline>
+              <source src="videos/carrucel/video-3.mp4" type="video/mp4" />
+            </video>
+            <button
+              type="button"
+              class="video-audio-toggle"
+              aria-label="Activar audio"
+              onclick="toggleVideoAudio(this)"
+            >
+              <i class="bi bi-volume-mute-fill"></i>
+            </button>
+          </div>
+          <h5>¿Por qué la moda puede unir generaciones?</h5>
+        </div>
+      </div>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- ---------------- LOS 80 --------------- -->
+    <section class="py-5" data-bg="#DDF3F7">
+      <div
+        class="d-flex justify-content-center align-items-center mb-4 text-center"
+      >
+        <div>
+          <h5 class="usuario">Estilo que Marcó Generaciones</h5>
+          <p>....</p>
+        </div>
+      </div>
+
+      <div class="slider">
+        <div class="slide-track">
+          <div class="card-hover">
+            <img src="imagenes/estilo/corte-80s.webp" class="img-normal" />
+            <img src="imagenes/estilo/corte-2026.webp" class="img-hover" />
+          </div>
+
+          <div class="card-hover">
+            <img src="imagenes/estilo/maquillaje-80s.webp" class="img-normal" />
+            <img src="imagenes/estilo/maquillaje-2026.webp" class="img-hover" />
+          </div>
+
+          <div class="card-hover">
+            <img src="imagenes/estilo/lentes-80s.webp" class="img-normal" />
+            <img src="imagenes/estilo/lentes-2026.webp" class="img-hover" />
+          </div>
+
+          <div class="card-hover">
+            <img src="imagenes/estilo/accesorios-80s.webp" class="img-normal" />
+            <img src="imagenes/estilo/accesorios-2026.webp" class="img-hover" />
+          </div>
+
+          <div class="card-hover">
+            <img
+              src="imagenes/estilo/relojes-anillos-80s.webp"
+              class="img-normal"
+            />
+            <img
+              src="imagenes/estilo/relojes-anillos-2026.webp"
+              class="img-hover"
+            />
+          </div>
+
+          <div class="card-hover">
+            <img src="imagenes/estilo/peinado-80s.webp" class="img-normal" />
+            <img src="imagenes/estilo/peinado-actual.webp" class="img-hover" />
+          </div>
+
+          <!-- ===== Tarjetas duplicadas para el loop infinito =====
+             Mismo contenido repetido para que la animación no
+             muestre un salto al reiniciar. Ocultas para lectores
+             de pantalla porque son solo repetición visual. -->
+
+          <div class="card-hover" aria-hidden="true">
+            <img src="imagenes/estilo/corte-80s.webp" class="img-normal" />
+            <img src="imagenes/estilo/corte-2026.webp" class="img-hover" />
+          </div>
+
+          <div class="card-hover" aria-hidden="true">
+            <img src="imagenes/estilo/maquillaje-80s.webp" class="img-normal" />
+            <img src="imagenes/estilo/maquillaje-2026.webp" class="img-hover" />
+          </div>
+
+          <div class="card-hover" aria-hidden="true">
+            <img src="imagenes/estilo/lentes-80s.webp" class="img-normal" />
+            <img src="imagenes/estilo/lentes-2026.webp" class="img-hover" />
+          </div>
+
+          <div class="card-hover" aria-hidden="true">
+            <img src="imagenes/estilo/accesorios-80s.webp" class="img-normal" />
+            <img src="imagenes/estilo/accesorios-2026.webp" class="img-hover" />
+          </div>
+
+          <div class="card-hover" aria-hidden="true">
+            <img
+              src="imagenes/estilo/relojes-anillos-80s.webp"
+              class="img-normal"
+            />
+            <img
+              src="imagenes/estilo/relojes-anillos-2026.webp"
+              class="img-hover"
+            />
+          </div>
+
+          <div class="card-hover" aria-hidden="true">
+            <img src="imagenes/estilo/peinado-80s.webp" class="img-normal" />
+            <img src="imagenes/estilo/peinado-actual.webp" class="img-hover" />
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+    </section>
+
+    <!-- ---------------- ANTES-DESPUES--------------- -->
+
+    <section class="container py-5" id="antes-despues" data-bg="#f2ecd0">
+      <h2 class="text-center" style="color: #e53d97">Pasarela del Tiempo</h2>
+      <p></p>
+
+      <div class="comparison-box">
+        <!-- MINIATURAS IZQUIERDA -->
+        <div class="comparison-gallery left-gallery">
+          <div
+            class="thumb active"
+            data-old="imagenes/antes-despues/los-80/acid-wash-80s.webp"
+            data-current="imagenes/antes-despues/actual/acid-wash-2026.webp"
+            data-title="Jean"
+            data-text="Una de las prendas más representativas de los años 80 que continúa siendo protagonista del estilo urbano."
+          >
+            <img src="imagenes/antes-despues/miniatura/jean-miniatura.webp" />
+          </div>
+
+          <div
+            class="thumb"
+            data-old="imagenes/antes-despues/los-80/chaqueta-cuero-80s.webp"
+            data-current="imagenes/antes-despues/actual/chaqueta-cuero-2026.webp"
+            data-title="Chaqueta"
+            data-text="La chaqueta oversize marcó tendencia en la moda urbana de los 80 y hoy vuelve reinventada."
+          >
+            <img
+              src="imagenes/antes-despues/miniatura/chaqueta-cuero-miniatura.webp"
+            />
+          </div>
+
+          <div
+            class="thumb"
+            data-old="imagenes/antes-despues/los-80/overol-mezclilla-80s.webp"
+            data-current="imagenes/antes-despues/actual/overol-mezclilla-2026.webp"
+            data-title="Overol"
+            data-text="El overol fue una prenda versátil y símbolo de comodidad en los años 80."
+          >
+            <img src="imagenes/antes-despues/miniatura/overol-miniatura.webp" />
+          </div>
+        </div>
+
+        <!-- COMPARADOR -->
+        <div class="comparison-wrapper" id="comparison">
+          <!-- Imagen actual -->
+          <img
+            src="imagenes/antes-despues/actual/acid-wash-2026.webp"
+            class="comparison-img"
+            id="imgCurrent"
+          />
+
+          <!-- Imagen años 80 -->
+          <div class="comparison-overlay" id="overlay">
+            <div class="comparison-fixed">
+              <img
+                src="imagenes/antes-despues/los-80/acid-wash-80s.webp"
+                class="comparison-img"
+                id="imgOld"
+              />
+              <!-- Esta imagen inicial se reemplaza automáticamente al hacer clic en cualquier miniatura -->
+            </div>
+          </div>
+          <div></div>
+
+          <!-- Etiquetas -->
+          <div class="comparison-label left">LOS 80</div>
+
+          <div class="comparison-label right">ACTUALIDAD</div>
+
+          <!-- Línea -->
+          <div class="comparison-divider" id="divider">
+            <div class="comparison-handle" id="handle">
+              <span>⇆</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- MINIATURAS DERECHA -->
+        <div class="comparison-gallery right-gallery">
+          <div
+            class="thumb"
+            data-old="imagenes/antes-despues/los-80/rompevientos-80s.webp"
+            data-current="imagenes/antes-despues/actual/rompevientos-2026.webp"
+            data-title="Rompevientos"
+            data-text="El rompevientos era infaltable en el guardarropa deportivo de los años 80."
+          >
+            <img
+              src="imagenes/antes-despues/miniatura/rompevientos-miniatura.webp"
+            />
+          </div>
+
+          <div
+            class="thumb"
+            data-old="imagenes/antes-despues/los-80/sueter-tejido-80s.webp"
+            data-current="imagenes/antes-despues/actual/sueter-tejido-2026.webp"
+            data-title="Suéter"
+            data-text="El suéter de los 80 sigue siendo un básico reinterpretado en la moda actual."
+          >
+            <img src="imagenes/antes-despues/miniatura/saco-miniatura.webp" />
+          </div>
+
+          <div
+            class="thumb"
+            data-old="imagenes/antes-despues/los-80/tenis-80s.webp"
+            data-current="imagenes/antes-despues/actual/tenis-26.webp"
+            data-title="Zamba"
+            data-text="La zamba, calzado icónico y nostálgico, sigue presente en el estilo urbano de hoy."
+          >
+            <img src="imagenes/antes-despues/miniatura/tenis-miniatura.webp" />
+          </div>
+        </div>
+      </div>
+
+      <!-- INFORMACIÓN -->
+      <div class="comparison-info">
+        <h3 id="outfitTitle">Chaqueta de cuero</h3>
+
+        <p id="outfitText">
+          Una de las prendas más representativas de los años 80 que continúa
+          siendo protagonista del estilo urbano.
+        </p>
+      </div>
+    </section>
+
+    <br />
+    <br />
+    <br />
+
+    <!-- ---------------- MÚSICA DE LOS 80 --------------- -->
+
+    <section class="container py-5" id="musica-80s" data-bg="#F9D8E8">
+      <h2 class="text-center fw-bold mb-2 musica-titulo">
+        Siente la vibra de los 80
+      </h2>
+
+      <p class="text-center musica-subtitulo mb-5">
+        Toca un disco para escuchar un fragmento
+      </p>
+
+      <div class="discos-grid">
+        <div
+          class="disco-item"
+          data-color="#E34190"
+          data-inicio="50"
+          data-duracion="35"
+        >
+          <div class="disco-vinilo">
+            <div class="disco-label" style="background: #e34190">
+              <i class="bi bi-play-fill disco-icono"></i>
+            </div>
+          </div>
+          <h5 class="disco-titulo">Este Ritmo Se Baila Así</h5>
+          <p class="disco-artista">Chayanne</p>
+          <audio
+            class="disco-audio"
+            src="audio/musica-80s/cancion1.mp3"
+            preload="metadata"
+          ></audio>
+        </div>
+
+        <div
+          class="disco-item"
+          data-color="#68C6DD"
+          data-inicio="26.5"
+          data-duracion="18"
+        >
+          <div class="disco-vinilo">
+            <div class="disco-label" style="background: #68c6dd">
+              <i class="bi bi-play-fill disco-icono"></i>
+            </div>
+          </div>
+          <h5 class="disco-titulo">Súbete a mi Moto</h5>
+          <p class="disco-artista">Menudo</p>
+          <audio
+            class="disco-audio"
+            src="audio/musica-80s/cancion2.mp3"
+            preload="metadata"
+          ></audio>
+        </div>
+
+        <div
+          class="disco-item"
+          data-color="#FEE601"
+          data-inicio="40"
+          data-duracion="35"
+        >
+          <div class="disco-vinilo">
+            <div class="disco-label" style="background: #fee601">
+              <i class="bi bi-play-fill disco-icono"></i>
+            </div>
+          </div>
+          <h5 class="disco-titulo">Susana</h5>
+          <p class="disco-artista">Menudo</p>
+          <audio
+            class="disco-audio"
+            src="audio/musica-80s/cancion3.mp3"
+            preload="metadata"
+          ></audio>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------- EQUIPO --------------- -->
+
+    <section class="container my-5" id="equipo" data-bg="#F9D8E8">
+      <h2 class="text-center fw-bold mb-2 equipo-titulo">Nuestro Equipo</h2>
+
+      <p class="text-center equipo-subtitulo mb-5">
+        Las 6 mentes detrás de Rolazo · Toca o pasa el mouse para conocerlos
+      </p>
+
+      <!-- Las tarjetas se generan dinámicamente desde js/script.js -->
+      <div class="equipo-grid" id="equipoGrid"></div>
+    </section>
+
+    <!-- =================== CONTACTO =================== -->
+
+    <footer class="footer-rolazo" id="contacto">
+      <div class="container-fluid px-0">
+        <div class="row g-0 align-items-stretch">
+          <!-- FOTO -->
+          <div class="col-lg-5 footer-foto">
+            <img src="imagenes/footer.webp" />
+          </div>
+
+          <!-- CONTENIDO -->
+          <div class="col-lg-7 footer-contenido">
+            <span class="footer-subtitulo"> CONECTA CON </span>
+
+            <h2 class="footer-titulo">ROLAZO</h2>
+
+            <p class="footer-texto">
+              Cada historia merece ser contada.<br />
+              Queremos escuchar la tuya y seguir construyendo la memoria de
+              Bogotá junto a nuevas generaciones.
+            </p>
+
+            <!-- ===================
+                     REDES SOCIALES
+                ==================== -->
+
+            <div class="footer-redes">
+              <!-- CORREO -->
+              <a href="mailto:rolazobog@gmail.com" class="red-social">
+                <i class="bi bi-envelope-fill"></i>
+
+                <span> Correo </span>
+              </a>
+
+              <!-- INSTAGRAM -->
+              <a
+                href="https://www.instagram.com/rolazobog/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="red-social"
+              >
+                <i class="bi bi-instagram"></i>
+
+                <span> Instagram </span>
+              </a>
+
+              <!-- TIKTOK -->
+              <a
+                href="https://www.tiktok.com/@rolazo_bog"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="red-social"
+              >
+                <i class="bi bi-tiktok"></i>
+
+                <span> TikTok </span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===================
+             PARTE INFERIOR
+        ==================== -->
+
+        <div class="footer-bottom">
+          <p>© 2026 ROLAZO · Bogotá, Colombia</p>
+
+          <p>Moda · Memoria · Identidad</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===================
+     SCRIPTS
+==================== -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
