@@ -806,6 +806,65 @@ body * {
 
 }
 
+/* --- VIDEOS DESTACADOS: version escritorio ---
+   Solo desde 992px de ancho en adelante (computador).
+   Videos bien grandes y un carrusel que se desliza
+   solo, despacio y sin saltos ni cortes.
+   En celular/tablet (menos de 992px) no se toca nada:
+   los videos quedan exactamente igual que antes. --- */
+@media (min-width: 992px){
+
+    .videos-scroll{
+
+        overflow:hidden;
+        padding:15px 0 30px;
+
+    }
+
+    .video-card{
+
+        flex:0 0 clamp(620px, 46vw, 920px);
+        margin-right:45px;
+
+    }
+
+    .videos-track{
+
+        display:flex;
+        width:max-content;
+
+    }
+
+    .videos-scroll--auto .videos-track{
+
+        animation:rolazoVideosDesplazamiento 55s linear infinite;
+
+    }
+
+    .videos-scroll--auto:hover .videos-track{
+
+        animation-play-state:paused;
+
+    }
+
+}
+
+@keyframes rolazoVideosDesplazamiento{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:translateX(-50%);
+
+    }
+
+}
+
 
 
 

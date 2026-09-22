@@ -1025,3 +1025,84 @@ function toggleVideoAudio(boton) {
     boton.setAttribute("aria-label", "Activar audio");
   }
 }
+
+/* ===================================================
+   CARRUSEL CONTINUO DE VIDEOS (SOLO COMPUTADOR)
+   A partir de 992px de ancho, la fila de videos
+   "¿Sabías que...?" se convierte en un carrusel que se
+   desliza solo, despacio y sin saltos (como una cinta
+   continua). Al llegar al final, vuelve a empezar sin
+   que se note el corte, porque el set de videos se
+   duplica una vez.
+   En celular/tablet no se toca nada: el HTML queda
+   exactamente igual que al cargar la pagina, con
+   scroll manual normal.
+=================================================== */
+(function () {
+
+  const contenedor = document.querySelector(".videos-scroll");
+  if (!contenedor) return;
+
+  const esEscritorio = window.matchMedia("(min-width: 992px)");
+  let pista = null; // .videos-track, solo existe mientras el carrusel esta activo
+
+  function activarCarruselEscritorio() {
+    if (pista) return; // ya esta activo, no hacer nada
+
+    // 1) Metemos las tarjetas originales dentro de una "pista" interna
+    pista = document.createElement("div");
+    pista.className = "videos-track";
+
+    const tarjetasOriginales = Array.from(contenedor.children);
+    tarjetasOriginales.forEach(function (tarjeta) {
+      pista.appendChild(tarjeta);
+    });
+
+    // 2) Duplicamos ese mismo set una vez, para que el recorrido
+    //    sea infinito y no se note ningun corte al reiniciar
+    tarjetasOriginales.forEach(function (tarjeta) {
+      const copia = tarjeta.cloneNode(true);
+      copia.setAttribute("aria-hidden", "true");
+
+      const video = copia.querySelector("video");
+      if (video) {
+        video.play().catch(function () {});
+      }
+
+      pista.appendChild(copia);
+    });
+
+    contenedor.appendChild(pista);
+    contenedor.classList.add("videos-scroll--auto");
+  }
+
+  function desactivarCarruselEscritorio() {
+    if (!pista) return; // ya estaba desactivado
+
+    // Devolvemos solo las tarjetas originales (la primera mitad)
+    // a la fila normal y borramos la pista con los duplicados
+    const hijos = Array.from(pista.children);
+    const mitad = hijos.length / 2;
+
+    hijos.slice(0, mitad).forEach(function (tarjeta) {
+      contenedor.appendChild(tarjeta);
+    });
+
+    pista.remove();
+    pista = null;
+
+    contenedor.classList.remove("videos-scroll--auto");
+  }
+
+  function actualizarSegunPantalla() {
+    if (esEscritorio.matches) {
+      activarCarruselEscritorio();
+    } else {
+      desactivarCarruselEscritorio();
+    }
+  }
+
+  esEscritorio.addEventListener("change", actualizarSegunPantalla);
+  actualizarSegunPantalla();
+
+})();
